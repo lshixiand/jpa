@@ -46,7 +46,6 @@ sourceCompatibility = 1.8
 // 默认使用了 Maven 的中央仓库。这里改用自定义的镜像库
 repositories {
 	mavenLocal()
-z
 }
 
 // 依赖关系
