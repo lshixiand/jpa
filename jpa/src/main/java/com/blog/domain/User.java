@@ -22,6 +22,15 @@ public class User{
     @Column(nullable = false)
     private int age;
 
+    @Column(nullable = false)
+    private String sex;
+
+    @Column(nullable = false)
+    private String telephone;
+
+    private String email;
+
+
     public User(Long id, String name, int age) {
         this.id = id;
         this.name = name;
@@ -58,6 +67,30 @@ public class User{
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
